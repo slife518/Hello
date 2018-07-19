@@ -31,7 +31,8 @@ class UserListAdapter(context: Context?, cursor: Cursor) : CursorAdapter(context
                 mainView.findViewById(R.id.profile) as ImageView,
                 mainView.findViewById(R.id.name) as TextView,
                 mainView.findViewById(R.id.tel_num) as TextView,
-                mainView.findViewById(R.id.del_item) as ImageButton)
+                mainView.findViewById(R.id.del_item) as ImageButton
+        )
         mainView.tag = holder
         return mainView
     }
