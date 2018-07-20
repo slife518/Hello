@@ -3,6 +3,7 @@ package com.example.registerusers
 import android.content.Context
 import android.database.AbstractCursor
 import android.database.Cursor
+import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -31,8 +32,7 @@ class UserListAdapter(context: Context?, cursor: Cursor) : CursorAdapter(context
                 mainView.findViewById(R.id.profile) as ImageView,
                 mainView.findViewById(R.id.name) as TextView,
                 mainView.findViewById(R.id.tel_num) as TextView,
-                mainView.findViewById(R.id.del_item) as ImageButton
-        )
+                mainView.findViewById(R.id.del_item) as ImageButton)
         mainView.tag = holder
         return mainView
     }
@@ -42,7 +42,15 @@ class UserListAdapter(context: Context?, cursor: Cursor) : CursorAdapter(context
      * 2. 새로 생성된 뷰가 화면에 보여질 때 호출되는 메소드
      */
     override fun bindView(view: View?, context: Context?, cursor: Cursor?) {
-        val holder : ViewHolder = view?.
+//        val holder: ViewHolder = view?.tag as ViewHolder
+//        holder.name.text = String.format("%s (%d)",
+//                cursor?.getString(1),
+//                cursor?.getInt(2))
+//        holder.tel_num.text = cursor?.getString(3)
+//        val picture: Drawable? = getPicture(cursor?.getString(4) ?: "0") ?:
+//        context?.getDrawable(android.R.drawable.ic_menu_gallery)
+//        holder.profile.background = picture
+//        holder.del_item.tag = cursor?.getLong(0)
     }
 
 }

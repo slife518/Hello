@@ -31,12 +31,12 @@ class MainActivity : AppCompatActivity() {
 
     //메뉴가 선택되었을 때 호출됨. 선택된 메뉴를 파라미터로 전달함.
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
-        when(item?.itemId){
-            R.id.add_user -> {
-                val intent : Intent = Intent(this, SaveUserActivity::class.java)
-                startActivity(intent)
-            }
-        }
+//        when(item?.itemId){
+//            R.id.add_user -> {
+//                val intent : Intent = Intent(this, SaveUserActivity::class.java)
+//                startActivity(intent)
+//            }
+//        }
 
         return super.onOptionsItemSelected(item)
     }
