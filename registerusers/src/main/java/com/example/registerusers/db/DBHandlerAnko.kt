@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper
 import com.example.registerusers.db.DBHandler.Companion.DB_NAME
 import org.jetbrains.anko.db.*
 
-class DBHandlerAnko(context: Context) :SQLiteOpenHelper(context, DB_NAME, null, DB_VERSION){
+class DBHandler_Anko(context: Context) :SQLiteOpenHelper(context, DB_NAME, null, DB_VERSION){
 
     companion object {
         val DB_NAME: String = "user.db"
